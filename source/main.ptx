@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb R}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{tikz}
+      \usepackage{caption} 
+      \usepackage{pgfplots} 
+      \usepgfplotslibrary{polar} 
+      \usepgflibrary{shapes.geometric} 
+      \usetikzlibrary{calc} 
+      \usepackage{framed} 
+    </latex-image-preamble>
+  </docinfo>
+
+  <book xml:id="math-251-handout2">
+    <title>MATH 251 Handout 2</title>
+    <subtitle>An example to get you started</subtitle>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>Dibyajyoti Deb</personname>
+          <department>Dept. of Mathematics</department>
+          <institution>Oregon Institute of Technology</institution>
+        </author>
+        <date>
+          <today />
+        </date>
+      </titlepage>
+
+      <colophon>
+
+        
+
+        <copyright>
+          <year>2020<ndash />2023</year>
+          <holder>You</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+      </colophon>
+    </frontmatter>
+
+    <chapter xml:id="chapter-title">
+      <title>Trigonometric Limits</title>
+      
+
+        <section xml:id="sec-perf-criteria">
+          <title>Performance Criteria</title>
+          <ul>
+            <li>
+              <p>
+                Determine limits using the Squeeze Theorem.
+              </p>
+            </li>
+            <li>
+              <p>
+                Calculate limits involving trigonometric functions.
+              </p>
+            </li>
+          </ul>
+          
+        </section>
+
+        <section xml:id="sec-squeeze-thm">
+          <title>The Squeeze Theorem</title>
+          <p>
+            Let us say that we have a function <m>f(x)</m> that is ``squeezed" between two functions 
+            <m>g(x)</m> 
+            and <m>h(x)</m> on an interval <m>I</m>, i.e., 
+            
+            <md>
+              <mrow> g(x) \amp \leq f(x) \leq h(x) \hspace{0.2in} \text{for all } x \in I \text{ and} 
+              \lim_{x \rightarrow a} g(x) = \lim_{x \rightarrow a} h(x) = L
+              </mrow>
+            </md>
+          </p>
+         
+        <figure xml:id="fig">
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{center} 
+
+              
+              \draw [thick, black] (1,4) to [out=-45,in=180] (3.9,3); 
+              \draw [thick, black] (4.1,3) to [out=0,in=-130] (5,4); 
+              \draw [thick, black] (1,2) to [out=45,in=180] (3.9,3); 
+              \draw [thick, black] (4.1,3) to [out=0,in=-130] (6,2.5); 
+              \draw [thick, red] (1,3) to [out=5,in=180] (3.9,3); 
+              \draw [thick, red] (4.1,3) to [out=0,in=-130] (6,3.5); 
+              \draw (4,3) circle [radius=2pt]; 
+              \draw (4,0.1)--(4,-0.1); 
+              \draw (-0.1,3)--(0.1,3); 
+              \node at (4,-0.3) {a}; 
+              \node at (6.5, 3.5) {f(x)}; 
+              \node at (6.5, 2.5) {g(x)}; 
+              \node at (5.5, 4) {h(x)}; 
+              \node at (-0.3, 3) {L}; 
+              
+              \end{center} 
+            \end{tikzpicture}
+          </latex-image>
+        </figure>
+          
+        </section>
+      
+      
+    </chapter>
+
+    <backmatter xml:id="backmatter">
+      <title>Backmatter</title>
+
+      <colophon>
+        <p> This book was authored in <pretext />. </p>
+      </colophon>
+
+    </backmatter>
+
+  </book>
+</pretext>
